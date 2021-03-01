@@ -1,0 +1,62 @@
+// Variables.
+$white : #ffffff;
+$black : #000000;
+$dark  : #212529; 
+$primary  : #212529; 
+$secondary  : #212529; 
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color: $white !important;
+}
+
+.main{
+    color: $black
+}
+
+.bg-mine{
+    background-color: $dark;
+}
+
+.img-banner{
+    width: 70vw;
+    height: auto;
+}
+
+.bg-option{
+    background-color: $dark !important;
+}
+
+.list-group-item{
+    transition: all .5s;
+    &:hover{
+    transition: all .5s;
+    background-color: $black !important;
+    }
+}
+
+.side-2{
+    border-left: 1px solid $black;
+    height: 80vh;
+}
+
+.link-cool{
+    text-decoration: none;
+    list-style:decimal-leading-zero;
+    color: $dark;
+    transition: all .5s;
+    
+    &:hover{
+        transition: all .5s;
+        color: $black;
+        text-decoration: underline;
+    }
+}
+
+.img-center{
+    margin-left: 15vw;
+}
