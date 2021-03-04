@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
-    <link rel="stylesheet"
-    href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/railscasts.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="./css/main.css">
     <title>DropNotes</title>
 </head>
 
@@ -17,7 +17,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="#">DropNotes</a>
+                <a class="navbar-brand" href="/">DropNotes</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -25,10 +25,10 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" href="typeOfData.html">Features</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">About</a>
@@ -39,119 +39,58 @@
         </nav>    </header>
 
     <main>
-
-<div class="m-5 main">
-    <div class="row mt-5 rounded">
-        <div class="col-md-9">
-            <p class="h3 m-1 text-center">DropNotes</p>
-            <p class="text-start">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-                dolore deleniti quisquam culpa harum aut exercitationem voluptates
-                eius minima, unde hic nobis voluptatum officiis quae libero veniam
-                quos corporis dolores.
-            </p>
-            <img src="https://wi.wallpapertip.com/wsimgs/160-1606471_logo-java.png" alt="#"
-                class="img-thumbnail mx-auto d-block" />
-            <p class="mt-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Necessitatibus, incidunt rem. Rem consectetur corporis temporibus
-                tenetur accusamus pariatur a ab? Eos numquam est vero delectus
-                voluptate tenetur officiis non eius? Lorem ipsum dolor sit amet
-                consectetur, adipisicing elit. Inventore laboriosam repellat libero
-                odit blanditiis veniam esse perspiciatis enim ex mollitia, labore
-                soluta voluptate consectetur adipisci deserunt eveniet quisquam
-                saepe rem?
-            </p>
-            <pre class="ms-5 me-5"><code class="language-java">
-class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!"); 
-    }
-}
-            </code></pre>
-            <p class="mt-2">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim natus doloribus possimus odit saepe illum
-                consequatur maxime quo. Expedita eius impedit, quam aut eum sed modi esse! Aliquam, esse consequatur.
-            </p>
-        </div>
-        <div class="col text-center side-2">
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingOne">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            <div class="h5">Introduction.</div>
-                        </button>
-                    </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <ul class="text-start">
-                                <a href="#" class="link-cool">
-                                    <li>Lenguage.</li>
-                                </a><a href="#" class="link-cool">
-                                    <li>Java.</li>
-                                </a><a href="#" class="link-cool">
-                                    <li>Functions.</li>
-                                </a><a href="#" class="link-cool">
-                                    <li>Why?</li>
-                                </a>
-                            </ul>
-                        </div>
+<div class="contenedor">
+    <img src="https://cdn.wallpapersafari.com/72/22/eJpjwf.jpg" class="img-fluid" alt=":3"
+        style="height: 92.9vh; width:100vw;">
+    <div class="banner text-white">
+        <h3>DropNotes</h3>
+        <div id="carouselExampleCaptions" class="carousel slide m-4" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://wallpapercave.com/wp/wp2618282.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
                     </div>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            <div class="h5">Type Of Data.</div>
-                        </button>
-                    </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <ul class="text-start">
-                                <a href="#" class="link-cool">
-                                    <li>Lenguage.</li>
-                                </a><a href="#" class="link-cool">
-                                    <li>Java.</li>
-                                </a><a href="#" class="link-cool">
-                                    <li>Functions.</li>
-                                </a><a href="#" class="link-cool">
-                                    <li>Why?</li>
-                                </a>
-                            </ul>
-                        </div>
+                <div class="carousel-item">
+                    <img src="https://fondosmil.com/fondo/29366.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
                     </div>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                            <div class="h5">Control Structures.</div>
-                        </button>
-                    </h2>
-                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <ul class="text-start">
-                                <a href="#" class="link-cool">
-                                    <li>Lenguage.</li>
-                                </a><a href="#" class="link-cool">
-                                    <li>Java.</li>
-                                </a><a href="#" class="link-cool">
-                                    <li>Functions.</li>
-                                </a><a href="#" class="link-cool">
-                                    <li>Why?</li>
-                                </a>
-                            </ul>
-                        </div>
+                <div class="carousel-item">
+                    <img src="https://i.pinimg.com/originals/11/1a/03/111a03133d14214539c96e0f657dff1a.png"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
                     </div>
                 </div>
             </div>
-        </div>    </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <button type="button" class="btn btn-outline-light"><a href="typeOfData.html">Start</a></button>
+    </div>
 </div>
-
     </main>
 
     <!-- JavaScript Bundle with Popper -->

@@ -1,7 +1,9 @@
 * {
   margin: 0;
-  padding: 0; 
-}
+  padding: 0; }
+
+body {
+  background-color: #ffffff !important; }
 
 .list-group-item {
   transition: all .5s; }
@@ -19,4 +21,14 @@
     color: #000000;
     text-decoration: underline; }
 
+.contenedor {
+  position: relative;
+  display: inline-block;
+  text-align: center; }
+
+.banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
 
