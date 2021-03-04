@@ -14,34 +14,12 @@ body{
     background-color: $white !important;
 }
 
-.main{
-    color: $black
-}
-
-.bg-mine{
-    background-color: $dark;
-}
-
-.img-banner{
-    width: 70vw;
-    height: auto;
-}
-
-.bg-option{
-    background-color: $dark !important;
-}
-
 .list-group-item{
     transition: all .5s;
     &:hover{
     transition: all .5s;
     background-color: $black !important;
     }
-}
-
-.side-2{
-    border-left: 1px solid $black;
-    height: 80vh;
 }
 
 .link-cool{
@@ -57,6 +35,15 @@ body{
     }
 }
 
-.img-center{
-    margin-left: 15vw;
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.banner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
