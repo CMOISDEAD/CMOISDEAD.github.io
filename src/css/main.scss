@@ -1,49 +1,47 @@
 // Variables.
-$white : #ffffff;
-$black : #000000;
-$dark  : #212529; 
-$primary  : #212529; 
-$secondary  : #212529; 
+$white: #ffffff;
+$black: #000000;
+$dark: #212529;
+$primary: #212529;
+$secondary: #212529;
 
-*{
-    margin:0;
-    padding:0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    background-color: $white !important;
+body {
+  background-color: $white !important;
 }
 
-.list-group-item{
-    transition: all .5s;
-    &:hover{
-    transition: all .5s;
+.list-group-item {
+  transition: all 0.5s;
+  &:hover {
+    transition: all 0.5s;
     background-color: $black !important;
-    }
+  }
 }
 
-.link-cool{
-    text-decoration: none;
-    list-style:decimal-leading-zero;
-    color: $dark;
-    transition: all .5s;
-    
-    &:hover{
-        transition: all .5s;
-        color: $black;
-        text-decoration: underline;
-    }
+.link-cool {
+  text-decoration: none;
+  list-style: decimal-leading-zero;
+  color: $dark;
+  transition: all 0.5s;
+
+  &:hover {
+    transition: all 0.5s;
+    color: $black;
+    text-decoration: underline;
+  }
 }
 
-.contenedor{
-    position: relative;
-    display: inline-block;
-    text-align: center;
+.navbar{
+    z-index: 1000 ;
 }
 
-.banner{
+.bg-transparent{
+    background: #00000000;
+    color: #ffffff;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
+
