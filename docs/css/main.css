@@ -6,29 +6,26 @@ body {
   background-color: #ffffff !important; }
 
 .list-group-item {
-  transition: all .5s; }
+  transition: all 0.5s; }
   .list-group-item:hover {
-    transition: all .5s;
+    transition: all 0.5s;
     background-color: #000000 !important; }
 
 .link-cool {
   text-decoration: none;
   list-style: decimal-leading-zero;
   color: #212529;
-  transition: all .5s; }
+  transition: all 0.5s; }
   .link-cool:hover {
-    transition: all .5s;
+    transition: all 0.5s;
     color: #000000;
     text-decoration: underline; }
 
-.contenedor {
-  position: relative;
-  display: inline-block;
-  text-align: center; }
+.navbar {
+  z-index: 1000; }
 
-.banner {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
+.bg-transparent {
+  background: #00000000;
+  color: #ffffff;
+  position: absolute; }
 
