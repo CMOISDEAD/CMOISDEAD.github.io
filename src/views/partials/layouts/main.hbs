@@ -19,7 +19,7 @@
 
 <body>
 
-    <header>
+    <header class="container">
         {{#> header-block}}
         {{> nav/navegation}}
         {{/header-block}}
@@ -30,9 +30,10 @@
         {{#> main-block }}
 
         {{/main-block}}
+        {{> sider/sider}}
         {{else}}
-        <div class="m-5 main">
-            <div class="row mt-5 rounded">
+        <div class="container">
+            <div class="rounded">
                 {{#> main-block }}
 
                 {{/main-block}}
@@ -59,6 +60,7 @@
         //methods
         fullpage_api.setAllowScrolling(true);
     </script>
+    <script src="main.js"></script>
 </body>
 
 </html>

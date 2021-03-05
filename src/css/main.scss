@@ -1,3 +1,6 @@
+// Imports.
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css");
+
 // Variables.
 $white: #ffffff;
 $black: #000000;
@@ -12,6 +15,7 @@ $secondary: #212529;
 
 body {
   background-color: $white !important;
+  overflow-x: hidden;
 }
 
 .list-group-item {
@@ -35,13 +39,66 @@ body {
   }
 }
 
-.navbar{
-    z-index: 1000 ;
+.navbar {
+  position: absolute;
+  top: 0px;
+  width: 82vw;
+  z-index: 1000;
 }
 
-.bg-transparent{
-    background: #00000000;
-    color: #ffffff;
-    position: absolute;
+.bg-transparent {
+  background: #00000000;
+  // color: #000000;
 }
 
+.responsive-img1 {
+  background-image: url("https://www.hdwallpapers.in/download/white_wallpaper_31_4k_hd_white-1920x1080.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+.responsive-img2 {
+  background-image: url("https://i.pinimg.com/originals/ef/7f/b1/ef7fb1b37078b6a2aef8e40710446bfa.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+.responsive-img3 {
+  background-image: url("https://wallpapermemory.com/uploads/505/mikasa-ackerman-wallpaper-full-hd-1920x1080-206315.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+.responsive-img4 {
+  background-image: url("https://www.wallpapertip.com/wmimgs/240-2402337_white-anime-wallpaper.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+.sider{
+  position: absolute;
+  top: 0px;
+  right: -15vw;
+  visibility: hidden;
+  transition: all 0.5s;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.lado{
+  position: absolute;
+  top: 0px;
+  right: 0vw;
+  visibility: visible;
+  transition: all 0.5s;
+  border-radius: 10px 0px 0px 10px;
+  height: 80vh;
+}
