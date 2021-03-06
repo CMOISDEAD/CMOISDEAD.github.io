@@ -1,5 +1,10 @@
 // Imports.
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css");
+@import "../../node_modules/hover.css/css/hover.css";
+
+// // Fonts
+@import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap");// BarCode
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');// Condensed
 
 // Variables.
 $white: #ffffff;
@@ -52,39 +57,35 @@ body {
 }
 
 .responsive-img1 {
-  background-image: url("https://www.hdwallpapers.in/download/white_wallpaper_31_4k_hd_white-1920x1080.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #464646;
+  // background-image: url("https://www.hdwallpapers.in/download/white_wallpaper_31_4k_hd_white-1920x1080.jpg");
+  // background-position: center center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  background-color: #ffffff;
 }
 .responsive-img2 {
-  background-image: url("https://i.pinimg.com/originals/ef/7f/b1/ef7fb1b37078b6a2aef8e40710446bfa.jpg");
+  background-image: url("https://wallpaperaccess.com/full/1216348.jpg");
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
   background-color: #464646;
 }
 .responsive-img3 {
-  background-image: url("https://wallpapermemory.com/uploads/505/mikasa-ackerman-wallpaper-full-hd-1920x1080-206315.jpg");
+  background-image: url("https://wallpapercave.com/wp/wp5728389.jpg");
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
   background-color: #464646;
 }
 .responsive-img4 {
-  background-image: url("https://www.wallpapertip.com/wmimgs/240-2402337_white-anime-wallpaper.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #464646;
+  // background-image: url("https://www.wallpapertip.com/wmimgs/240-2402337_white-anime-wallpaper.jpg");
+  // background-position: center center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  background-color: #ffffff;
 }
 
-.sider{
+.sider {
   position: absolute;
   top: 0px;
   right: -15vw;
@@ -93,7 +94,7 @@ body {
   border-radius: 10px 0px 0px 10px;
 }
 
-.lado{
+.lado {
   position: absolute;
   top: 0px;
   right: 0vw;
@@ -101,4 +102,29 @@ body {
   transition: all 0.5s;
   border-radius: 10px 0px 0px 10px;
   height: 80vh;
+}
+
+.nav-link {
+  color: $black !important;
+  transition-delay: 0.5s;
+}
+
+.main-text {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.5em;
+}
+
+.code-text{
+  font-family: 'Libre Barcode 39 Text', cursive;
+  font-size: 2em;
+}
+
+.code-text2{
+  font-family: 'Libre Barcode 39 Text', cursive;
+  font-size: 3em;
+}
+
+.icons-grid > div > a > i{
+  font-size:2rem;
+  color: $white
 }
