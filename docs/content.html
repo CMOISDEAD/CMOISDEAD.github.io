@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
         integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-    <title>Estructura</title>
+    <title>Contenido</title>
 </head>
 
 <body>
@@ -63,115 +63,75 @@
     <main>
         <div class="container">
             <div class="rounded">
-<div class="mt-5">
-    <div class="text-center h3">Estructura de Java</div>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, tenetur quos! Quibusdam sit a et sed reiciendis
-        vel harum, nesciunt excepturi provident rerum ratione quia voluptas non aperiam labore vitae.
-        Temporibus ad, exercitationem a labore veritatis voluptatum velit at numquam neque maiores libero, quibusdam
-        consequatur nemo voluptates accusantium mollitia doloremque fuga, cumque expedita quae magni ex fugit aspernatur
-        laudantium. Vero.
-        Quidem inventore sapiente quam officia tenetur adipisci perferendis optio mollitia accusamus quo voluptate minus
-        quos, omnis assumenda modi dicta maiores expedita neque vitae laborum, quod quasi odio, architecto perspiciatis.
-        Illo?</p>
-    <pre class=""><code class="language-java">
-class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!"); 
-    }
-}
-    </code></pre>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, debitis autem maiores, cum accusantium aperiam
-        neque velit ex ipsam in dolor voluptatibus modi, quod earum animi labore similique quo saepe.
-        Rerum hic quod pariatur repellat, totam consequatur molestiae suscipit natus. Architecto hic in deserunt
-        mollitia nam atque dignissimos voluptas esse omnis. Nihil sint voluptate minus blanditiis totam dignissimos,
-        necessitatibus at.
-        Laborum dolores itaque corrupti tenetur culpa quibusdam in illo! Eaque officia enim est consequuntur, veritatis
-        perferendis voluptates deleniti ex? Modi ex corporis incidunt tenetur nihil error ipsam fugiat voluptate
-        officia!
-    </p>
-    <pre class=""><code class="language-java">
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package co.uniquindio.programacion.Perro;
 
-import javax.swing.JOptionPane;
-
-/**
- *
- * @author camilo
- */
-public class Perro {
-
-    public static void main(String[] args) {
-        double areaCuadradoPrincipal = 100, areaTotal, areaRestante;
-        double base, altura;
-        double largo, ancho;
-        double lado;
-
-        double areaTriangulo, areaRectangulo, areaCuadrado;
-        base = Double.parseDouble(JOptionPane.showInputDialog("Ingresa la base del triangulo: "));
-        altura = Double.parseDouble(JOptionPane.showInputDialog("Ingresa la altura del triangulo: "));
-
-        largo = Double.parseDouble(JOptionPane.showInputDialog("Ingresa la base del rectangulo: "));
-        ancho = Double.parseDouble(JOptionPane.showInputDialog("Ingresa la altura del rectangulo: "));
-
-        lado = Double.parseDouble(JOptionPane.showInputDialog("Ingresa el lado del cuadrado: "));
-
-        areaTriangulo = CalcularAreaTriangulo(base, altura);
-        areaRectangulo = CalcularAreaRectangulo(largo, ancho);
-        areaCuadrado = CalcularAreaCuadrado(lado);
-        areaTotal = CalcularAreaTotal(areaTriangulo, areaRectangulo, areaCuadrado);
-
-        areaRestante = calcularAreaRestante(areaTotal, areaCuadradoPrincipal);
-
-        Imprimir("El area restante es:"+areaRestante);
-    }
-
-    public static double CalcularAreaTriangulo(double base, double altura) {
-        double area = (base * altura) / 2;
-        return area;
-    }
-
-    public static double CalcularAreaRectangulo(double largo, double ancho) {
-        double area = (largo * ancho);
-        return area;
-    }
-
-    public static double CalcularAreaCuadrado(double lado) {
-        double area = (lado * lado);
-        return area;
-    }
-
-    public static double CalcularAreaTotal(double area1, double area2, double area3) {
-        double areaTotal = area1 + area2 + area3;
-
-        return areaTotal;
-    }
-
-    public static double calcularAreaRestante(double areaPerro, double areaCuadradoPrincipal) {
-        double area = (areaPerro - areaCuadradoPrincipal);
-
-        return area;
-    }
-
-    public static void Imprimir(String texto) {
-        JOptionPane.showMessageDialog(null, texto);
-    }
-}
-    </code></pre>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati facere consequatur eveniet aliquam earum optio
-        nam unde cupiditate nesciunt sit, eaque sapiente in expedita. Et ipsa rem laboriosam iusto recusandae.
-        Quae temporibus ullam consequatur voluptates explicabo ad animi! Officia dicta animi placeat molestiae
-        aspernatur a commodi odit, quod cupiditate nesciunt deleniti laudantium! Quisquam labore molestiae molestias
-        velit? Voluptas, unde rerum.
-        Sunt est, delectus officia sequi esse reiciendis, cupiditate, autem sed praesentium odio nihil. Maiores,
-        pariatur laudantium! Possimus ipsam modi sunt rem corrupti architecto, dicta nesciunt necessitatibus laboriosam
-        consequuntur. Porro, libero.</p>
+<div class="mt-5 mb-5">
+    <div class="container">
+        <div class="h2 text-center">Contenido</div>
+        <div class="row">
+            <div class="col-4">
+                <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list"
+                        href="#list-home" role="tab" aria-controls="home">Home</a>
+                    <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list"
+                        href="#list-profile" role="tab" aria-controls="profile">Profile</a>
+                    <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list"
+                        href="#list-messages" role="tab" aria-controls="messages">Messages</a>
+                    <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list"
+                        href="#list-settings" role="tab" aria-controls="settings">Settings</a>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                        <div class="h2" class="text-center">main</div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima necessitatibus nostrum,
+                        accusantium eos quas tenetur nobis molestias ea tempora, corrupti consectetur, quibusdam
+                        explicabo mollitia odit harum quam nesciunt natus fugit!
+                        <a href="">
+                            <button type="button" class="btn btn-dark">
+                                Ir
+                            </button>
+                        </a>
+                    </div>
+                    <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                        <div class="h2" class="text-center">main</div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima necessitatibus nostrum,
+                        accusantium eos quas tenetur nobis molestias ea tempora, corrupti consectetur, quibusdam
+                        explicabo mollitia odit harum quam nesciunt natus fugit!
+                        <a href="">
+                            <button class="btn-dark">
+                                Ir
+                            </button>
+                        </a>
+                    </div>
+                    <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                        <div class="h2" class="text-center">main</div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima necessitatibus nostrum,
+                        accusantium eos quas tenetur nobis molestias ea tempora, corrupti consectetur, quibusdam
+                        explicabo mollitia odit harum quam nesciunt natus fugit!
+                        <a href="">
+                            <button class="btn-dark">
+                                Ir
+                            </button>
+                        </a>
+                    </div>
+                    <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                        <div class="h2" class="text-center">main</div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima necessitatibus nostrum,
+                        accusantium eos quas tenetur nobis molestias ea tempora, corrupti consectetur, quibusdam
+                        explicabo mollitia odit harum quam nesciunt natus fugit!
+                        <a href="">
+                            <button class="btn-dark">
+                                Ir
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
                 <div class=" sider bg-light text-center comun " id="sider">
                     <div class="accordion accordion-flush" id="accordionFlushExample">
                         <div class="mt-2 title-sider">

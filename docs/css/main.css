@@ -4160,12 +4160,6 @@ body {
   background-color: #ffffff !important;
   overflow-x: hidden; }
 
-.list-group-item {
-  transition: all 0.5s; }
-  .list-group-item:hover {
-    transition: all 0.5s;
-    background-color: #000000 !important; }
-
 .link-cool {
   text-decoration: none;
   list-style: decimal-leading-zero;
@@ -4180,7 +4174,7 @@ body {
   position: absolute;
   top: 0px;
   width: 82vw;
-  z-index: 1000; }
+  z-index: 10; }
 
 .bg-transparent {
   background: #00000000; }
@@ -4205,22 +4199,40 @@ body {
 .responsive-img4 {
   background-color: #ffffff; }
 
-.sider {
+.comun {
   position: absolute;
   top: 0px;
-  right: -15vw;
-  visibility: hidden;
   transition: all 0.5s;
-  border-radius: 10px 0px 0px 10px; }
+  z-index: 11;
+  height: 100vh;
+  width: 20vw;
+  transition-delay: 10s; }
+
+.sider {
+  display: none;
+  right: -15vw; }
 
 .lado {
-  position: absolute;
+  position: fixed;
   top: 0px;
-  right: 0vw;
-  visibility: visible;
-  transition: all 0.5s;
-  border-radius: 10px 0px 0px 10px;
-  height: 80vh; }
+  right: 0vw; }
+
+nav > .show {
+  background-color: #212529 !important;
+  padding: 1rem;
+  text-align: center; }
+
+@media screen and (max-width: 600px) {
+  .cool-image {
+    display: none; }
+  .code-text2, .button-cool {
+    text-align: center; }
+  #gatillo {
+    display: none; } }
+
+@media screen and (max-width: 400px) {
+  .minimal-text {
+    display: none; } }
 
 .nav-link {
   color: #000000 !important;
