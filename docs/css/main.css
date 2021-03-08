@@ -4219,8 +4219,14 @@ body {
 
 nav > .show {
   background-color: #212529 !important;
-  padding: 1rem;
-  text-align: center; }
+  padding-left: 1rem;
+  width: auto;
+  max-width: 200px;
+  height: auto;
+  transition: all  .5s;
+  color: #ffffff; }
+  nav > .show > ul > li > * {
+    color: nav > .show > ul > li > * white; }
 
 @media screen and (max-width: 600px) {
   .cool-image {
@@ -4253,4 +4259,15 @@ nav > .show {
 .icons-grid > div > a > i {
   font-size: 2rem;
   color: #ffffff; }
+
+a.active {
+  background: #212529 !important;
+  color: #ffffff !important;
+  border: #212529 !important; }
+
+.imagen-blog {
+  margin-bottom: 5vh; }
+  .imagen-blog > img {
+    width: 40vw;
+    height: auto; }
 
