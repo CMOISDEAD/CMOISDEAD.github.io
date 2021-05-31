@@ -19,7 +19,7 @@ module.exports = {
     }),
     new HandlebarsPlugin({
       entry: path.join(process.cwd(), "src", "views", "pages", "*.hbs"),
-      output: path.join(process.cwd(), "docs", "[name].html"),
+      output: path.join(process.cwd(), "docs", "views", "[name].html"),
       data: path.join(__dirname, "./src/views/data/project.json"),
       partials: [
         path.join(process.cwd(), "src", "views", "partials", "*", "*.hbs")
